@@ -91,7 +91,7 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/pcapnav-config
 %attr(755,root,root) %{_libdir}/libpcapnav.so.*.*.*
 %attr(755,root,root) %ghost %{_libdir}/libpcapnav.so.0
-%{_gtkdocdir}/*
+%{_gtkdocdir}/pcapnav
 
 %files devel
 %defattr(644,root,root,755)
