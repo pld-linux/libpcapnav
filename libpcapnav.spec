@@ -68,7 +68,9 @@ Statyczna biblioteka libpcapnav.
 %{__autoconf}
 %{__autoheader}
 %{__automake}
-%configure
+%configure \
+	--enable-gtk-doc \
+	--with-html-dir="%{_gtkdocdir}"
 %{__make}
 
 %install
@@ -85,10 +87,11 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc AUTHORS ChangeLog COPYING README docs
+%doc AUTHORS ChangeLog COPYING README
 %attr(755,root,root) %{_bindir}/pcapnav-config
 %attr(755,root,root) %{_libdir}/libpcapnav.so.*.*.*
 %attr(755,root,root) %ghost %{_libdir}/libpcapnav.so.0
+%{_gtkdocdir}/*
 
 %files devel
 %defattr(644,root,root,755)
