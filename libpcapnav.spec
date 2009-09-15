@@ -36,28 +36,28 @@ pakiety. Dodatkowo API umożliwia wygodne funkcje do manipulacji
 strukturami timeval.
 
 %package devel
-Summary:	Header files for pcapnav library
-Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki pcapnav
+Summary:	Header files for libpcapnav library
+Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki libpcapnav
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
 %description devel
-Header files for pcapnav library.
+Header files for libpcapnav library.
 
 %description devel -l pl.UTF-8
-Pliki nagłówkowe biblioteki pcapnav.
+Pliki nagłówkowe biblioteki libpcapnav.
 
 %package static
-Summary:	Static pcapnav library
-Summary(pl.UTF-8):	Statyczna biblioteka pcapnav
+Summary:	Static libpcapnav library
+Summary(pl.UTF-8):	Statyczna biblioteka libpcapnav
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
-Static pcapnav library.
+Static libpcapnav library.
 
 %description static -l pl.UTF-8
-Statyczna biblioteka pcapnav.
+Statyczna biblioteka libpcapnav.
 
 %prep
 %setup -q
