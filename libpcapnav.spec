@@ -14,7 +14,7 @@ Source0:	http://dl.sourceforge.net/netdude/libpcapnav/%{version}/%{name}-%{versi
 URL:		http://netdude.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	gtk+-devel
+BuildRequires:	gtk-doc
 BuildRequires:	libpcap-devel
 BuildRequires:	libtool
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
